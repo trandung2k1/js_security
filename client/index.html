@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <h2 id="h2"></h2>
+    <form id="form">
+        <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your fullname" required />
+        </div>
+        <button id="btn" type="submit">Submit</button>
+    </form>
+    <script type="text/javascript">
+        const input = document.getElementById('input');
+        input.onchange = function () {
+            document.body.innerHTML = input.value;
+        }
+    </script>
+    <!-- <script src="./cookie.js"></script> -->
+    <!-- <script src="./localStorage.js"></script> -->
+    <!-- <script src="./sessionStorage.js"></script> -->
+    <script src="./formData.js"></script>
+</body>
+
+</html>
